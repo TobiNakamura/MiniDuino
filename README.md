@@ -11,3 +11,5 @@ MCU was drag soldered and the first blinky program is flashed. The factory defau
 Using AVRDude, fuse bits CKSEL[0..3] was changed from the default 0010 to 1111 for the external low power crystal oscilator.
 ![fuse bits](fuse.jpg)
 ![clock setting](clock.jpg)
+Channel 1(yellow) is XTAL1, channel 2 (blue is XTAL2). Both waveforms are within spec. Just look at their stability...
+![clock waveform](clock_wave.png)
