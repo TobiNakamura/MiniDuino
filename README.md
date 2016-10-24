@@ -17,3 +17,6 @@ Channel 1(yellow) is XTAL1, channel 2 (blue is XTAL2). Both waveforms are within
 ![clock waveform](clock_wave.jpg.bmp)
 
 There does however seem to be some stray inductance; mostlikely due to my bad soldering.
+
+Done!
+![done](complete.jpg)
