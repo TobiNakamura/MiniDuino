@@ -15,3 +15,4 @@ avrdude -c usbtiny -p atmega328p -F -v -U lfuse:w:0xFF:m
 
 Channel 1(yellow) is XTAL1, channel 2 (blue is XTAL2). Both waveforms are within spec. Just look at their stability...
 ![clock waveform](clock_wave.jpg.bmp)
+There does however seem to be some stray inductance; mostlikely due to my bad soldering.
