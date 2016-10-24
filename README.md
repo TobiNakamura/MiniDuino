@@ -9,5 +9,6 @@ The board was partially constructed to test the input polarity protection (up to
 MCU was drag soldered and the first blinky program is flashed. The factory default is for the MCU to use the internal RC oscillator, resulting in a very slow blinky.
 ![fully constructed](full.jpg)
 Using AVRDude, fuse bits CKSEL[0..3] was changed from the default 0010 to 1111 for the external low power crystal oscilator.
+avrdude -c usbtiny -p atmega328p -F -v -U lfuse:w:0xFF:m
 ![fuse bits](fuse.jpg)
 ![clock setting](clock.jpg)
