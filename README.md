@@ -1,6 +1,26 @@
 # MiniDuino
 A minimalist arduino module featuring a ATmega328p, external clock, and 5v regulator with reverse polarity protection. 
 Note unite does not have USART <-> USB capability.
+
+# Programming
+Connect Bus Pirate (red board) to MiniDuino.
+	MISO -> PB4
+	MOSI -> PB3
+	CLK -> PB5
+	CS -> RESET
+	GND -> GND
+
+Apply power to the MiniDuino. 
+	9 volts -> Vin
+
+Write Program in Arduino (or atmel studio). For pin numbering reference see Arduino_Uno_Rev3-schematic.pdf.
+Export compiled hex file from Arduino IDE
+	Sketch > Export Compiled Binary
+
+Upload the hex file to MiniDuino using AVRDude
+	$ sudo avrdude -c buspirate -P /dev/ttyUSB0 -p atmega328p -F -v -U flash:w:[name of file].hex
+
+# Technical Details
 ![schematic](schematic.png)
 ![GERBER](gerber.png)
 
